@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skygo360 | Global Study Abroad & Tourist Visa Infrastructure</title>
+  <title>Skygo360 | Global Study Abroad, Medical Tourism & Guaranteed Visa Solutions</title>
   
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -49,7 +52,7 @@
     }
     .brand-logo-blend {
       mix-blend-mode: multiply;
-      filter: contrast(1.08);
+      filter: contrast(1.12);
     }
     .brand-logo-footer {
       filter: brightness(0) invert(1);
@@ -58,15 +61,16 @@
 </head>
 <body class="bg-brand-surface text-slate-700 antialiased font-sans selection:bg-brand-teal selection:text-white text-base pb-16 sm:pb-0">
 
-  <aside aria-label="Live Advisory" class="bg-brand-dark text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800/80">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
+  <!-- Streamlined Clean Advisory Bar with Visa Success Guaranteed -->
+  <aside aria-label="Live Advisory" class="bg-brand-dark text-slate-300 text-xs sm:text-sm py-2.5 px-4 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
       <div class="flex items-center gap-2.5">
-        <span class="flex h-2 w-2 relative">
+        <span class="flex h-2.5 w-2.5 relative">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-emerald"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-emerald"></span>
         </span>
-        <span class="text-white font-semibold">Priority Visa Desk</span>
-        <span class="hidden md:inline text-slate-400">| Fast-Track Study Intakes & Schengen Tourist Slots</span>
+        <span class="text-white font-bold tracking-wide">100% Visa Success Guaranteed</span>
+        <span class="hidden md:inline text-slate-400">| Complete Profile Vetting for 190+ Countries Worldwide</span>
       </div>
       <a href="javascript:void(0)" onclick="openWhatsApp('Direct Call & Enquiry')" class="flex items-center gap-1.5 text-brand-accent font-bold hover:underline">
         <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
@@ -75,21 +79,25 @@
     </div>
   </aside>
 
+  <!-- Clean Header with Large Brand Logo -->
   <header class="sticky top-0 z-50 glass-nav border-b border-slate-200/90 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-24 sm:h-28 lg:h-32">
+      <div class="flex items-center justify-between h-32 sm:h-36 lg:h-40">
         
+        <!-- Large High-Impact Brand Logo -->
         <a href="#" class="flex items-center py-2 group">
-          <img src="logo.jpeg" alt="Skygo360 Logo" class="brand-logo-blend h-16 sm:h-20 lg:h-24 w-auto max-w-[240px] sm:max-w-[320px] object-contain transition-transform group-hover:scale-105">
+          <img src="logo.jpeg" alt="Skygo360 Logo" class="brand-logo-blend h-24 sm:h-32 lg:h-36 w-auto max-w-[340px] sm:max-w-[440px] object-contain transition-transform group-hover:scale-105">
         </a>
         
+        <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center space-x-10 text-base font-bold text-slate-700">
-          <a href="#destinations" class="hover:text-brand-teal transition py-1">Destinations</a>
-          <a href="#calculator" class="hover:text-brand-teal transition py-1">Fee & Funds Engine</a>
+          <a href="#destinations" class="hover:text-brand-teal transition py-1">Visa Portals</a>
+          <a href="#calculator" class="hover:text-brand-teal transition py-1">Eligibility Engine</a>
           <a href="#why-skygo" class="hover:text-brand-teal transition py-1">Why Skygo360</a>
           <a href="#faq" class="hover:text-brand-teal transition py-1">FAQ</a>
         </nav>
 
+        <!-- Right Action Button -->
         <div class="hidden sm:flex items-center gap-4">
           <a href="javascript:void(0)" onclick="openWhatsApp('General Assistance Enquiry')" class="flex items-center gap-2 text-slate-700 hover:text-brand-teal font-bold text-sm transition px-3 py-2">
             <i data-lucide="message-square" class="w-5 h-5 text-brand-teal"></i>
@@ -100,15 +108,17 @@
           </a>
         </div>
 
+        <!-- Mobile Trigger -->
         <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-800 hover:text-brand-teal">
           <i data-lucide="menu" class="w-8 h-8"></i>
         </button>
       </div>
     </div>
 
+    <!-- Mobile Navigation Drawer -->
     <div id="mobileMenu" class="hidden lg:hidden px-6 pt-4 pb-6 bg-white border-b border-slate-200 space-y-4 font-semibold text-base shadow-xl">
-      <a href="#destinations" onclick="closeMobileMenu()" class="block text-slate-700 hover:text-brand-teal">Destinations</a>
-      <a href="#calculator" onclick="closeMobileMenu()" class="block text-slate-700 hover:text-brand-teal">Fee & Funds Engine</a>
+      <a href="#destinations" onclick="closeMobileMenu()" class="block text-slate-700 hover:text-brand-teal">Visa Portals</a>
+      <a href="#calculator" onclick="closeMobileMenu()" class="block text-slate-700 hover:text-brand-teal">Eligibility Engine</a>
       <a href="#why-skygo" onclick="closeMobileMenu()" class="block text-slate-700 hover:text-brand-teal">Why Skygo360</a>
       <a href="#faq" onclick="closeMobileMenu()" class="block text-slate-700 hover:text-brand-teal">FAQ</a>
       <a href="javascript:void(0)" onclick="openWhatsApp('Mobile Menu Quick Consultation')" class="block py-3 text-center rounded-xl bg-brand-teal text-white font-bold">Chat on WhatsApp</a>
@@ -116,34 +126,38 @@
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="relative pt-10 pb-20 sm:pt-16 sm:pb-28 bg-gradient-to-b from-teal-50/40 via-white to-brand-surface overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
       
-      <div class="inline-flex items-center gap-2.5 px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-white border border-teal-200/80 text-brand-navy shadow-sm mb-6 sm:mb-8">
-        <span class="w-2.5 h-2.5 rounded-full bg-brand-teal"></span>
-        Global Admission Pathways & Worldwide Tourist Visa Filing
+      <div class="inline-flex items-center gap-2.5 px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-emerald-50 border border-emerald-300 text-emerald-800 shadow-sm mb-6 sm:mb-8">
+        <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600"></i>
+        <span>Visa Success Guaranteed • Zero Refusal Filing Framework</span>
       </div>
 
       <h1 class="font-display text-3xl sm:text-6xl lg:text-7xl font-extrabold text-brand-navy tracking-tight leading-[1.15] max-w-5xl mx-auto">
-        Your Gateway to <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-tealDark">Global Universities</span> & Iconic <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-emerald">World Destinations</span>.
+        Your Gateway to <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-tealDark">Global Study</span>, <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-emerald">World Tourism</span> & <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">Medical Care</span>.
       </h1>
 
       <p class="mt-4 sm:mt-6 text-base sm:text-xl text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed">
-        Whether you are pursuing higher education abroad or exploring iconic landmarks worldwide, Skygo360 guarantees verified filing, active flight PNRs, and structured consular dossiers.
+        We handle end-to-end consular filing for all 190+ global destinations. From international university admissions and holiday trips to specialized medical treatment visas with 100% structured accuracy.
       </p>
 
+      <!-- Search Pill -->
       <div class="mt-8 sm:mt-12 max-w-4xl mx-auto bg-white p-2.5 sm:p-4 rounded-3xl sm:rounded-full shadow-2xl border border-slate-200 shadow-slate-200/70 flex flex-col sm:flex-row items-center gap-3">
         
+        <!-- Left Field -->
         <div class="flex items-center gap-3 w-full sm:w-1/2 px-4 py-3 bg-slate-50/80 sm:bg-transparent rounded-2xl sm:rounded-none group">
-          <i data-lucide="map-pin" class="w-5 h-5 sm:w-6 sm:h-6 text-brand-teal shrink-0 transition-transform group-focus-within:scale-110"></i>
+          <i data-lucide="globe" class="w-5 h-5 sm:w-6 sm:h-6 text-brand-teal shrink-0 transition-transform group-focus-within:scale-110"></i>
           <div class="text-left w-full">
-            <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">Target Country</span>
-            <input type="text" id="heroSearchInput" placeholder="Search France, UK, Canada, USA..." class="w-full bg-transparent border-0 p-0 text-sm sm:text-base font-bold text-brand-navy placeholder:text-slate-400 focus:outline-none focus:ring-0">
+            <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">Target Country (All 190+ Supported)</span>
+            <input type="text" id="heroSearchInput" placeholder="Type any country (e.g. France, UK, Canada, India, Turkey...)" class="w-full bg-transparent border-0 p-0 text-sm sm:text-base font-bold text-brand-navy placeholder:text-slate-400 focus:outline-none focus:ring-0">
           </div>
         </div>
 
         <div class="hidden sm:block h-10 w-[1px] bg-slate-200"></div>
 
+        <!-- Right Field -->
         <div class="relative w-full sm:w-1/3">
           <button type="button" onclick="toggleCustomMenu('heroDropdown', 'heroMenuIcon')" class="w-full flex items-center justify-between gap-3 px-4 py-3 bg-slate-50/80 sm:bg-transparent rounded-2xl sm:rounded-none text-left focus:outline-none">
             <div class="flex items-center gap-3 overflow-hidden">
@@ -164,6 +178,9 @@
             <div onclick="selectHeroCategory('student', 'Student / Study Permit')" class="px-4 py-2.5 rounded-xl hover:bg-teal-50 hover:text-brand-teal text-slate-700 font-bold text-sm cursor-pointer transition flex items-center gap-2">
               <span>🎓</span> Student & Study Permit
             </div>
+            <div onclick="selectHeroCategory('medical', 'Medical Tourism & Treatment')" class="px-4 py-2.5 rounded-xl hover:bg-teal-50 hover:text-brand-teal text-slate-700 font-bold text-sm cursor-pointer transition flex items-center gap-2">
+              <span>🏥</span> Medical Tourism & Treatment
+            </div>
             <div onclick="selectHeroCategory('business', 'Business / Commercial')" class="px-4 py-2.5 rounded-xl hover:bg-teal-50 hover:text-brand-teal text-slate-700 font-bold text-sm cursor-pointer transition flex items-center gap-2">
               <span>💼</span> Business / Commercial
             </div>
@@ -176,74 +193,99 @@
         </button>
       </div>
 
+      <!-- Trust Badges -->
       <div class="mt-8 sm:mt-10 flex flex-wrap justify-center items-center gap-4 sm:gap-12 text-xs sm:text-sm font-semibold text-slate-600">
-        <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 sm:w-5 sm:h-5 text-brand-teal"></i> Statement of Purpose (SOP) Drafting</span>
-        <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 sm:w-5 sm:h-5 text-brand-teal"></i> Verifiable Live PNR Flight Bookings</span>
-        <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 sm:w-5 sm:h-5 text-brand-teal"></i> Priority VFS / Consular Slot Booking</span>
+        <span class="flex items-center gap-1.5"><i data-lucide="badge-check" class="w-4 h-4 sm:w-5 sm:h-5 text-brand-emerald"></i> Visa Success Guaranteed</span>
+        <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 sm:w-5 sm:h-5 text-brand-teal"></i> Global Visa Filing (190+ Countries)</span>
+        <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 sm:w-5 sm:h-5 text-brand-teal"></i> Priority VFS & Embassy Slot Expediting</span>
       </div>
 
     </div>
   </section>
 
+  <!-- Interactive Corridor Hub with Tourist, Study, and Medical Portals -->
   <section id="destinations" class="py-16 sm:py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 sm:mb-12 gap-6">
         <div>
-          <span class="text-sm font-extrabold uppercase tracking-widest text-brand-teal">Live Destination Portals</span>
-          <h2 class="font-display text-2xl sm:text-4xl lg:text-5xl font-extrabold text-brand-navy mt-2">Explore Global Destinations</h2>
-          <p class="text-slate-600 text-sm sm:text-base mt-2">Choose between top tourist vacation spots and dedicated study abroad corridors.</p>
+          <span class="text-sm font-extrabold uppercase tracking-widest text-brand-teal">Universal Corridors</span>
+          <h2 class="font-display text-2xl sm:text-4xl lg:text-5xl font-extrabold text-brand-navy mt-2">Specialized Visa Portals</h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-2">Explore worldwide tourist getaways, study abroad tracks, and accredited hospital medical visas.</p>
         </div>
 
-        <div class="inline-flex p-1.5 rounded-2xl bg-slate-100 border border-slate-200 self-start lg:self-auto w-full sm:w-auto">
-          <button id="btnTouristMode" onclick="setCorridorMode('tourist')" class="flex-1 sm:flex-initial px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl font-bold text-xs sm:text-sm transition-all bg-brand-navy text-white shadow-md flex items-center justify-center gap-2">
+        <div class="inline-flex flex-wrap p-1.5 rounded-2xl bg-slate-100 border border-slate-200 self-start lg:self-auto gap-1">
+          <button id="btnTouristMode" onclick="setCorridorMode('tourist')" class="px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all bg-brand-navy text-white shadow-md flex items-center justify-center gap-2">
             <i data-lucide="plane" class="w-4 h-4"></i>
             <span>Tourist Visas</span>
           </button>
-          <button id="btnStudyMode" onclick="setCorridorMode('study')" class="flex-1 sm:flex-initial px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl font-bold text-xs sm:text-sm transition-all text-slate-600 hover:text-brand-navy flex items-center justify-center gap-2">
+          <button id="btnStudyMode" onclick="setCorridorMode('study')" class="px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all text-slate-600 hover:text-brand-navy flex items-center justify-center gap-2">
             <i data-lucide="graduation-cap" class="w-4 h-4"></i>
             <span>Study Permits</span>
+          </button>
+          <button id="btnMedicalMode" onclick="setCorridorMode('medical')" class="px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all text-slate-600 hover:text-brand-navy flex items-center justify-center gap-2">
+            <i data-lucide="activity" class="w-4 h-4"></i>
+            <span>Medical Tourism</span>
           </button>
         </div>
       </div>
 
+      <!-- Dynamic Cards Grid -->
       <div id="corridorCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"></div>
+
+      <!-- Worldwide Countries Callout Box -->
+      <div class="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-slate-900 via-brand-navy to-slate-900 text-white flex flex-col md:flex-row items-center justify-between gap-6 border border-slate-800 shadow-xl">
+        <div class="space-y-2 text-center md:text-left">
+          <span class="inline-block px-3 py-1 rounded-full bg-brand-teal/20 text-brand-accent text-xs font-bold uppercase tracking-wider">Universal Country Coverage</span>
+          <h3 class="font-display text-xl sm:text-2xl font-extrabold text-white">Looking for a country not listed above?</h3>
+          <p class="text-sm text-slate-300 max-w-2xl">We process visitor, study, medical, and business visas for <strong>all 190+ countries</strong> worldwide with verified documentation and guaranteed assistance.</p>
+        </div>
+        <button onclick="bookSpecificCorridor('All Other Worldwide Countries', 'Universal Global Visa Service')" class="px-8 py-4 rounded-2xl bg-brand-teal hover:bg-brand-tealDark text-white font-display font-bold text-sm transition shadow-lg shadow-brand-teal/20 flex items-center gap-2 shrink-0">
+          <span>Apply for Any Country</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </div>
 
     </div>
   </section>
 
+  <!-- Interactive Visa Eligibility & Timeline Engine (Without Embassy Fees) -->
   <section id="calculator" class="py-16 sm:py-24 bg-brand-navy text-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
       <div class="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
-        <span class="text-sm font-bold uppercase tracking-widest text-brand-teal">Financial & Timeline Intelligence</span>
+        <span class="text-sm font-bold uppercase tracking-widest text-brand-teal">Timeline & Success Intelligence</span>
         <h2 class="font-display text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white mt-2">Visa Assessment Engine</h2>
-        <p class="text-slate-300 text-sm sm:text-base mt-3">Select your program to inspect official embassy fees, financial benchmarks, and consular timelines.</p>
+        <p class="text-slate-300 text-sm sm:text-base mt-3">Select your destination stream to inspect approval guarantees, financial benchmarks, and consular timelines.</p>
       </div>
 
       <div class="max-w-4xl mx-auto bg-slate-900 border border-slate-700/80 rounded-3xl p-5 sm:p-10 shadow-2xl">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-8">
           
+          <!-- Dropdown 1 -->
           <div class="relative">
             <button type="button" onclick="toggleCustomMenu('calcCorridorMenu', 'calcCorridorIcon')" class="w-full bg-slate-800/90 border border-slate-700 rounded-2xl p-4 text-left flex items-center justify-between focus:outline-none">
               <div>
-                <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Select Corridor</span>
+                <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Select Corridor / Category</span>
                 <span id="calcCorridorText" class="block text-sm sm:text-base font-bold text-white truncate">🇫🇷 France (Schengen Europe) — Tourist</span>
               </div>
               <i id="calcCorridorIcon" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 shrink-0 transition-transform"></i>
             </button>
             <input type="hidden" id="calcCorridorValue" value="schengen_tourist">
 
-            <div id="calcCorridorMenu" class="hidden absolute left-0 right-0 top-full mt-2 bg-slate-800 border border-slate-700 rounded-2xl shadow-floating p-2 z-50 max-h-60 overflow-y-auto">
+            <div id="calcCorridorMenu" class="hidden absolute left-0 right-0 top-full mt-2 bg-slate-800 border border-slate-700 rounded-2xl shadow-floating p-2 z-50 max-h-64 overflow-y-auto">
               <div onclick="selectCalcCorridor('schengen_tourist', '🇫🇷 France (Schengen Europe) — Tourist')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇫🇷 France (Schengen Europe) — Tourist</div>
               <div onclick="selectCalcCorridor('uk_tourist', '🇬🇧 UK (London & Britain) — 6M Visitor')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇬🇧 UK (London & Britain) — 6M Visitor</div>
               <div onclick="selectCalcCorridor('usa_b1b2', '🇺🇸 USA — B1/B2 10-Year Multiple')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇺🇸 USA — B1/B2 10-Year Multiple</div>
+              <div onclick="selectCalcCorridor('medical_global', '🏥 Global Medical Tourism & Treatment Visa')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-emerald-300 font-bold text-sm cursor-pointer transition">🏥 Global Medical Tourism & Treatment Visa</div>
               <div onclick="selectCalcCorridor('uae_tourist', '🇦🇪 Dubai / UAE — Express e-Visa')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇦🇪 Dubai / UAE — Express e-Visa</div>
               <div onclick="selectCalcCorridor('canada_study', '🇨🇦 Canada — Study Permit (SDS)')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇨🇦 Canada — Study Permit (SDS)</div>
               <div onclick="selectCalcCorridor('uk_student', '🇬🇧 UK — Student Route (CAS)')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇬🇧 UK — Student Route (CAS)</div>
               <div onclick="selectCalcCorridor('australia_study', '🇦🇺 Australia — Subclass 500')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇦🇺 Australia — Subclass 500</div>
+              <div onclick="selectCalcCorridor('other_global', '🌐 All Other 190+ Countries (Custom Filing)')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-amber-300 font-bold text-sm cursor-pointer transition">🌐 All Other 190+ Countries (Custom Filing)</div>
             </div>
           </div>
 
+          <!-- Dropdown 2 -->
           <div class="relative">
             <button type="button" onclick="toggleCustomMenu('calcSpeedMenu', 'calcSpeedIcon')" class="w-full bg-slate-800/90 border border-slate-700 rounded-2xl p-4 text-left flex items-center justify-between focus:outline-none">
               <div>
@@ -262,6 +304,7 @@
 
         </div>
 
+        <!-- Output Metrics: Replaced Embassy Fees with Guaranteed Visa Success -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 p-5 sm:p-6 rounded-2xl bg-slate-800/60 border border-slate-700 text-center">
           <div class="border-b sm:border-b-0 sm:border-r border-slate-700/80 pb-3 sm:pb-0 sm:pr-4">
             <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Consular Turnaround</span>
@@ -270,9 +313,12 @@
           </div>
 
           <div class="border-b sm:border-b-0 sm:border-r border-slate-700/80 pb-3 sm:pb-0 sm:pr-4">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Govt & Embassy Fees</span>
-            <div id="outGovFee" class="font-display text-xl sm:text-3xl font-extrabold text-white mt-1">€90 (~₹8,200)</div>
-            <p class="text-[11px] text-slate-400 mt-0.5">Standard adult consular fee</p>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Approval Assurance</span>
+            <div class="font-display text-xl sm:text-2xl font-extrabold text-emerald-400 mt-1 flex items-center justify-center gap-1.5">
+              <i data-lucide="shield-check" class="w-6 h-6 text-emerald-400"></i>
+              <span>Guaranteed</span>
+            </div>
+            <p class="text-[11px] text-slate-400 mt-0.5">100% structured dossier filing</p>
           </div>
 
           <div>
@@ -285,7 +331,7 @@
         <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-800">
           <div class="flex items-center gap-2 text-xs sm:text-sm text-slate-400">
             <i data-lucide="check-check" class="w-4 h-4 text-brand-teal shrink-0"></i>
-            <span>Includes cover letter composition and live PNR flight booking.</span>
+            <span>Includes cover letter composition, medical referral vetting and live flight booking.</span>
           </div>
           <button onclick="prefillBookingFromCalc()" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-brand-teal hover:bg-brand-tealDark text-white font-bold text-sm transition flex items-center justify-center gap-2">
             <span>Proceed with this Category</span>
@@ -297,11 +343,12 @@
     </div>
   </section>
 
+  <!-- Why Skygo360 Section -->
   <section id="why-skygo" class="py-16 sm:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
         <span class="text-sm font-bold uppercase tracking-widest text-brand-teal">The Skygo360 Advantage</span>
-        <h2 class="font-display text-2xl sm:text-4xl lg:text-5xl font-extrabold text-brand-navy mt-2">Engineered for Confirmed Approvals</h2>
+        <h2 class="font-display text-2xl sm:text-4xl lg:text-5xl font-extrabold text-brand-navy mt-2">Visa Success Guaranteed</h2>
         <p class="text-slate-600 text-sm sm:text-base mt-2">We eliminate documentation mistakes that cause arbitrary refusals and biometric delays.</p>
       </div>
 
@@ -318,8 +365,8 @@
           <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-teal-100 text-brand-teal flex items-center justify-center mb-5 sm:mb-6">
             <i data-lucide="file-check-2" class="w-6 h-6 sm:w-7 sm:h-7"></i>
           </div>
-          <h3 class="font-display text-lg sm:text-xl font-bold text-brand-navy mb-2">Academic SOP & Financial Auditing</h3>
-          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">For students, we align qualifications with target programs and vet CA reports and funds to prevent refusal on home-tie grounds.</p>
+          <h3 class="font-display text-lg sm:text-xl font-bold text-brand-navy mb-2">Academic & Medical Vetting</h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">We structure academic SOPs, financial CA audits, and hospital invitation letters to guarantee flawless compliance with international visa criteria.</p>
         </div>
 
         <div class="p-6 sm:p-8 rounded-3xl bg-slate-50 border border-slate-200/90 shadow-sm hover:shadow-xl transition-all">
@@ -327,12 +374,13 @@
             <i data-lucide="calendar-check" class="w-6 h-6 sm:w-7 sm:h-7"></i>
           </div>
           <h3 class="font-display text-lg sm:text-xl font-bold text-brand-navy mb-2">Priority Consular Appointments</h3>
-          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">We monitor VFS Global, TLScontact, and BLS appointment calendars to secure the earliest biometric and submission slots.</p>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">We monitor VFS Global, TLScontact, and BLS appointment calendars around the clock to secure the earliest biometric and submission slots.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- FAQ Accordion -->
   <section id="faq" class="py-16 sm:py-24 bg-brand-surface border-t border-slate-200">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-10 sm:mb-16">
@@ -343,37 +391,38 @@
       <div class="space-y-4">
         <div class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-6 transition">
           <button onclick="toggleFaq(1)" class="w-full flex justify-between items-center text-left font-display font-bold text-brand-navy text-base sm:text-lg">
-            <span>Do I need to purchase full non-refundable flight tickets for tourist visa filing?</span>
+            <span>What documents are required for Medical Tourism & Treatment Visas?</span>
             <i id="faqIcon-1" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
           </button>
           <div id="faqContent-1" class="hidden mt-3 sm:mt-4 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-3 sm:pt-4">
-            No. Embassies advise against purchasing non-refundable air tickets before receiving visa approval. Skygo360 generates genuine airline flight reservations with active PNRs and verifiable hotel vouchers that stay active for consular verification.
+            Medical visas typically require an official medical referral letter from your local physician, a formal invitation letter from the destination hospital/accredited medical center confirming treatment and cost estimates, proof of sufficient financial coverage for procedures and stay, and medical attendant documentation (if accompanying a patient).
           </div>
         </div>
 
         <div class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-6 transition">
           <button onclick="toggleFaq(2)" class="w-full flex justify-between items-center text-left font-display font-bold text-brand-navy text-base sm:text-lg">
-            <span>What are the key financial requirements for Canada and UK Student Visas?</span>
+            <span>Do you really provide visa filing support for all 190+ countries?</span>
             <i id="faqIcon-2" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
           </button>
           <div id="faqContent-2" class="hidden mt-3 sm:mt-4 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-3 sm:pt-4">
-            For Canada (SDS stream), students require a Guaranteed Investment Certificate (GIC) of $20,635 CAD plus 1st-year tuition payment proof. For the UK, students must demonstrate 28 consecutive days of living expenses (£9,207 to £12,006 depending on location) in their or their parents' bank account.
+            Yes. Beyond the featured countries shown on our portal, Skygo360 manages visa applications, document attestation, MEA apostille, and consular appointments for all sovereign nations across Europe, the Americas, Asia-Pacific, Africa, and the Middle East.
           </div>
         </div>
 
         <div class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-6 transition">
           <button onclick="toggleFaq(3)" class="w-full flex justify-between items-center text-left font-display font-bold text-brand-navy text-base sm:text-lg">
-            <span>Can Skygo360 manage cases with prior visa refusals?</span>
+            <span>Do I need to purchase full non-refundable flight tickets before applying?</span>
             <i id="faqIcon-3" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform"></i>
           </button>
           <div id="faqContent-3" class="hidden mt-3 sm:mt-4 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-3 sm:pt-4">
-            Yes. Our Refusal Desk retrieves official GCMS notes from Immigration, Refugees and Citizenship Canada (IRCC) or analyzes refusal letters to identify exact grounds of rejection and rebuilds the case with clear legal justifications and affidavits.
+            No. Consulates advise against purchasing non-refundable tickets prior to visa grant. Skygo360 provides official airline reservations with active PNRs and verifiable hotel vouchers that stay active for consular validation.
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Direct WhatsApp Booking Desk Form with All Streams & Worldwide Countries -->
   <section id="contact" class="py-16 sm:py-24 bg-brand-navy text-white relative">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-12 shadow-2xl">
@@ -398,18 +447,33 @@
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
-            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-3.5 sm:p-4">
-              <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1.5">Applicant Email (Optional)</label>
-              <input type="email" id="appEmail" placeholder="name@example.com" class="w-full bg-transparent border-0 p-0 text-sm sm:text-base font-bold text-white focus:outline-none">
+            <!-- Custom Dropdown: Worldwide Country Selector -->
+            <div class="relative">
+              <button type="button" onclick="toggleCustomMenu('bookingCountryMenu', 'bookingCountryIcon')" class="w-full bg-slate-800/90 border border-slate-700 rounded-2xl p-3.5 sm:p-4 text-left flex items-center justify-between focus:outline-none">
+                <div>
+                  <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Destination Country</span>
+                  <span id="bookingCountryText" class="block text-sm sm:text-base font-bold text-white truncate">🇫🇷 France (Schengen Europe)</span>
+                </div>
+                <i id="bookingCountryIcon" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 shrink-0 transition-transform"></i>
+              </button>
+              <input type="hidden" id="appDest" value="France (Schengen Europe)">
+
+              <div id="bookingCountryMenu" class="hidden absolute left-0 right-0 top-full mt-2 bg-slate-800 border border-slate-700 rounded-2xl shadow-floating p-2 z-50 max-h-60 overflow-y-auto">
+                <div onclick="selectBookingCountry('France (Schengen Europe)', '🇫🇷 France (Schengen Europe)')" class="px-4 py-2.5 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇫🇷 France (Schengen Europe)</div>
+                <div onclick="selectBookingCountry('United Kingdom (UK)', '🇬🇧 United Kingdom (UK)')" class="px-4 py-2.5 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇬🇧 United Kingdom (UK)</div>
+                <div onclick="selectBookingCountry('United States (USA)', '🇺🇸 United States (USA)')" class="px-4 py-2.5 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇺🇸 United States (USA)</div>
+                <div onclick="selectBookingCountry('Canada', '🇨🇦 Canada')" class="px-4 py-2.5 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇨🇦 Canada</div>
+                <div onclick="selectBookingCountry('Australia', '🇦🇺 Australia')" class="px-4 py-2.5 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇦🇺 Australia</div>
+                <div onclick="selectBookingCountry('Germany (Europe)', '🇩🇪 Germany (Europe)')" class="px-4 py-2.5 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇩🇪 Germany (Europe)</div>
+                <div onclick="selectBookingCountry('Dubai / UAE', '🇦🇪 Dubai / UAE')" class="px-4 py-2.5 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇦🇪 Dubai / UAE</div>
+                <div onclick="selectBookingCountry('India (Medical / Tourist e-Visa)', '🇮🇳 India (Medical / Tourist e-Visa)')" class="px-4 py-2.5 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇮🇳 India (Medical / Tourist e-Visa)</div>
+                <div onclick="selectBookingCountry('Thailand / Singapore', '🇸🇬 Thailand / Singapore')" class="px-4 py-2.5 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇸🇬 Thailand / Singapore</div>
+                <div onclick="selectBookingCountry('New Zealand / Japan', '🇯🇵 New Zealand / Japan')" class="px-4 py-2.5 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🇯🇵 New Zealand / Japan</div>
+                <div onclick="selectBookingCountry('All Other Global Destinations', '🌐 Other Country (Specify in notes)')" class="px-4 py-2.5 rounded-xl hover:bg-slate-700 text-brand-accent font-bold text-sm cursor-pointer transition">🌐 Other Country (Specify in notes)</div>
+              </div>
             </div>
 
-            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-3.5 sm:p-4">
-              <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1.5">Destination Country</label>
-              <input type="text" id="appDest" required placeholder="e.g. France, UK, Canada, USA" class="w-full bg-transparent border-0 p-0 text-sm sm:text-base font-bold text-white focus:outline-none">
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+            <!-- Custom Dropdown: Booking Category -->
             <div class="relative">
               <button type="button" onclick="toggleCustomMenu('bookingCategoryMenu', 'bookingCategoryIcon')" class="w-full bg-slate-800/90 border border-slate-700 rounded-2xl p-3.5 sm:p-4 text-left flex items-center justify-between focus:outline-none">
                 <div>
@@ -423,16 +487,17 @@
               <div id="bookingCategoryMenu" class="hidden absolute left-0 right-0 top-full mt-2 bg-slate-800 border border-slate-700 rounded-2xl shadow-floating p-2 z-50">
                 <div onclick="selectBookingCategory('Tourist & Holiday Visa', '🏖️ Tourist & Holiday Visa')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🏖️ Tourist & Holiday Visa</div>
                 <div onclick="selectBookingCategory('Study Permit & Student Visa', '🎓 Student Visa / Study Permit')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🎓 Student Visa / Study Permit</div>
+                <div onclick="selectBookingCategory('Medical Tourism & Treatment', '🏥 Medical Tourism & Treatment')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-emerald-300 font-bold text-sm cursor-pointer transition">🏥 Medical Tourism & Treatment</div>
                 <div onclick="selectBookingCategory('Business Delegation', '💼 Business Visa')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">💼 Business Visa</div>
                 <div onclick="selectBookingCategory('MEA Apostille & Attestation', '📜 MEA Apostille & Attestation')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">📜 MEA Apostille & Attestation</div>
                 <div onclick="selectBookingCategory('Refusal Case Remedy', '🔄 Refusal Re-Application')" class="px-4 py-3 rounded-xl hover:bg-slate-700 text-slate-200 font-bold text-sm cursor-pointer transition">🔄 Refusal Re-Application</div>
               </div>
             </div>
+          </div>
 
-            <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-3.5 sm:p-4">
-              <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1.5">Travel Date / Academic Intake</label>
-              <input type="text" id="appNotes" placeholder="e.g. Traveling in October / September Intake" class="w-full bg-transparent border-0 p-0 text-sm sm:text-base font-medium text-white focus:outline-none">
-            </div>
+          <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-3.5 sm:p-4">
+            <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1.5">Travel Dates / Medical Treatment / Specific Country Details</label>
+            <input type="text" id="appNotes" placeholder="e.g. Hospital treatment in November / Fall intake / Visiting Switzerland" class="w-full bg-transparent border-0 p-0 text-sm sm:text-base font-medium text-white focus:outline-none">
           </div>
 
           <button type="submit" class="w-full py-4 sm:py-5 rounded-2xl bg-brand-teal hover:bg-brand-tealDark text-white font-display font-bold text-base sm:text-lg transition-all shadow-xl shadow-brand-teal/20 flex items-center justify-center gap-3">
@@ -445,6 +510,7 @@
     </div>
   </section>
 
+  <!-- Mobile Sticky Bottom Quick Action Bar -->
   <div class="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 p-2.5 flex items-center gap-3 shadow-2xl">
     <a href="tel:+917009667026" class="flex-1 py-3 rounded-xl bg-slate-100 text-brand-navy font-bold text-xs flex items-center justify-center gap-2">
       <i data-lucide="phone" class="w-4 h-4 text-brand-teal"></i>
@@ -456,16 +522,18 @@
     </a>
   </div>
 
+  <!-- Corporate Footer -->
   <footer class="bg-brand-dark text-slate-400 py-12 sm:py-14 border-t border-slate-800 text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
       <div class="flex items-center gap-4">
-        <img src="logo.jpeg" alt="Skygo360" class="brand-logo-footer h-12 sm:h-14 w-auto object-contain opacity-85">
-        <span class="text-slate-500 font-medium text-xs sm:text-sm">| Global Study Abroad & Consular Mobility Infrastructure</span>
+        <img src="logo.jpeg" alt="Skygo360" class="brand-logo-footer h-14 sm:h-18 w-auto object-contain opacity-85">
+        <span class="text-slate-500 font-medium text-xs sm:text-sm">| Global Study Abroad, Medical Tourism & Consular Mobility Infrastructure</span>
       </div>
       <p class="text-slate-500 text-xs sm:text-sm">&copy; 2026 Skygo360. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- Interactive JavaScript Engine -->
   <script>
     lucide.createIcons();
 
@@ -515,6 +583,13 @@
       document.getElementById('bookingCategoryIcon').style.transform = 'rotate(0deg)';
     }
 
+    function selectBookingCountry(val, label) {
+      document.getElementById('appDest').value = val;
+      document.getElementById('bookingCountryText').innerText = label;
+      document.getElementById('bookingCountryMenu').classList.add('hidden');
+      document.getElementById('bookingCountryIcon').style.transform = 'rotate(0deg)';
+    }
+
     function selectCalcCorridor(val, label) {
       document.getElementById('calcCorridorValue').value = val;
       document.getElementById('calcCorridorText').innerText = label;
@@ -531,14 +606,14 @@
       updateCalculator();
     }
 
-    // Tourist & Study Destination Matrix
+    // Tourist, Study & Medical Tourism Matrix
     const touristCorridors = [
       {
         image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
         flag: "🇫🇷",
         country: "France (Schengen Europe)",
         stream: "Paris, Eiffel Tower & 29 European States",
-        badge: "98.8% Approval Rate",
+        badge: "Visa Success Guaranteed",
         badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
         turnaround: "10 - 15 Days",
         validity: "Up to 90 Days Multi-Entry",
@@ -550,7 +625,7 @@
         flag: "🇬🇧",
         country: "United Kingdom",
         stream: "London, Scotland & Britain Heritage",
-        badge: "6-Month Multi-Entry",
+        badge: "Visa Success Guaranteed",
         badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
         turnaround: "3 - 4 Weeks",
         validity: "6 Months Multiple Entry",
@@ -562,7 +637,7 @@
         flag: "🇺🇸",
         country: "United States (B1/B2)",
         stream: "New York, California & US National Parks",
-        badge: "10-Year Multiple Entry",
+        badge: "Visa Success Guaranteed",
         badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
         turnaround: "Consular Appointment Based",
         validity: "10 Years Multiple Entry",
@@ -584,26 +659,26 @@
       {
         image: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
         flag: "🇯🇵",
-        country: "Japan",
-        stream: "Tokyo, Mount Fuji & Kyoto Culture",
-        badge: "Fast-Track Review",
+        country: "Japan & Asia",
+        stream: "Tokyo, Mount Fuji & Asian Cultural Hubs",
+        badge: "Visa Success Guaranteed",
         badgeColor: "bg-rose-50 text-rose-700 border-rose-200",
         turnaround: "5 - 7 Working Days",
         validity: "15 to 30 Days Single/Multi",
         prereq: "Itinerary & Financials",
-        target: "Japan"
+        target: "Japan & Asia"
       },
       {
         image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80",
-        flag: "🇸🇬",
-        country: "Singapore & Thailand",
-        stream: "Marina Bay Sands & Tropical Island Getaways",
-        badge: "Instant Documentation",
+        flag: "🌐",
+        country: "All 190+ Global Countries",
+        stream: "Worldwide Tourism, Family Visits & Visas",
+        badge: "Worldwide Coverage",
         badgeColor: "bg-teal-50 text-brand-teal border-teal-200",
-        turnaround: "3 - 5 Working Days",
-        validity: "30 Days Tourism",
-        prereq: "Return Tickets & Hotel Vouchers",
-        target: "Singapore & Thailand"
+        turnaround: "Jurisdiction Dependent",
+        validity: "Full Embassy Support",
+        prereq: "Passport & Basic Financials",
+        target: "Worldwide Countries"
       }
     ];
 
@@ -613,7 +688,7 @@
         flag: "🇨🇦",
         country: "Canada (Study Permit)",
         stream: "Toronto, Vancouver & Leading DLI Colleges",
-        badge: "Fast-Track SDS Stream",
+        badge: "Visa Success Guaranteed",
         badgeColor: "bg-red-50 text-red-700 border-red-200",
         turnaround: "Sept (Fall) & Jan (Winter)",
         validity: "Up to 3 Years Post-Grad Work",
@@ -625,7 +700,7 @@
         flag: "🇬🇧",
         country: "UK (Student Route)",
         stream: "Oxford, Cambridge & Russell Group Unis",
-        badge: "2-Yr Graduate Route PSW",
+        badge: "Visa Success Guaranteed",
         badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
         turnaround: "Sept / Oct & Jan / Feb",
         validity: "2 Years Post-Study Work",
@@ -637,7 +712,7 @@
         flag: "🇦🇺",
         country: "Australia (Subclass 500)",
         stream: "Sydney, Melbourne & Group of Eight",
-        badge: "Genuine Student (GS) Vetting",
+        badge: "Visa Success Guaranteed",
         badgeColor: "bg-amber-50 text-amber-700 border-amber-200",
         turnaround: "Feb & July Major Intakes",
         validity: "2 to 4 Years Work Rights",
@@ -649,7 +724,7 @@
         flag: "🇩🇪",
         country: "Germany (APS Certificate)",
         stream: "Technical Universities (€0 Tuition Public)",
-        badge: "APS Verified Pathway",
+        badge: "Visa Success Guaranteed",
         badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
         turnaround: "Winter (Oct) & Summer (Apr)",
         validity: "18-Month Jobseeker Visa",
@@ -661,7 +736,7 @@
         flag: "🇺🇸",
         country: "USA (F-1 Higher Ed)",
         stream: "Ivy League & Leading STEM Programs",
-        badge: "3-Yr STEM OPT Extension",
+        badge: "Visa Success Guaranteed",
         badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
         turnaround: "Fall (Aug) & Spring (Jan)",
         validity: "1 to 3 Years OPT Work Permit",
@@ -670,21 +745,98 @@
       },
       {
         image: "https://images.unsplash.com/photo-1549144511-f099e773c147?auto=format&fit=crop&w=800&q=80",
-        flag: "🇪🇺",
-        country: "Europe (France & Ireland)",
-        stream: "Grandes Écoles & European Tech Hubs",
-        badge: "High Visa Grant Ratio",
+        flag: "🌐",
+        country: "Global University Programs",
+        stream: "Higher Education Across 190+ Countries",
+        badge: "Global Admissions",
         badgeColor: "bg-teal-50 text-brand-teal border-teal-200",
-        turnaround: "September Annual Intake",
-        validity: "Up to 2 Years Stay Back",
-        prereq: "€7,000 to €10,000 Liquid Funds",
-        target: "Europe Student Visa"
+        turnaround: "Rolling Intakes",
+        validity: "Student Permits",
+        prereq: "Offer Letter & Financials",
+        target: "Global University Programs"
+      }
+    ];
+
+    const medicalCorridors = [
+      {
+        image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80",
+        flag: "🇮🇳",
+        country: "India (Medical e-Visa / MED)",
+        stream: "Apollo, Fortis, Max & Super-Speciality Hospitals",
+        badge: "⚡ Fast-Track 48-Hr e-Visa",
+        badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
+        turnaround: "2 - 4 Days",
+        validity: "60 Days Triple Entry",
+        prereq: "Accredited Hospital Invitation",
+        target: "India Medical Visa"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80",
+        flag: "🇩🇪",
+        country: "Germany & EU (Medical Treatment)",
+        stream: "Charité Berlin, Heidelberg & European Clinics",
+        badge: "Visa Success Guaranteed",
+        badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
+        turnaround: "7 - 12 Days",
+        validity: "Duration of Treatment",
+        prereq: "Hospital Cost Deposit & Guarantee",
+        target: "Germany Medical Visa"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80",
+        flag: "🇦🇪",
+        country: "UAE / Dubai (Patient Entry Permit)",
+        stream: "Dubai Healthcare City (DHCC) & Specialist Centers",
+        badge: "Visa Success Guaranteed",
+        badgeColor: "bg-amber-50 text-amber-700 border-amber-200",
+        turnaround: "48 - 72 Hours",
+        validity: "90 Days Renewable",
+        prereq: "DHA Certified Medical Letter",
+        target: "UAE Medical Visa"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80",
+        flag: "🇹🇭",
+        country: "Thailand & Singapore (Health Travel)",
+        stream: "Bumrungrad International & Mount Elizabeth",
+        badge: "Visa Success Guaranteed",
+        badgeColor: "bg-teal-50 text-brand-teal border-teal-200",
+        turnaround: "3 - 5 Days",
+        validity: "30 to 90 Days",
+        prereq: "Medical Appointment & Vetting",
+        target: "Thailand Singapore Medical Visa"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+        flag: "🇺🇸",
+        country: "USA & UK (Specialist Treatment)",
+        stream: "Mayo Clinic, Johns Hopkins & Harley Street",
+        badge: "Visa Success Guaranteed",
+        badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
+        turnaround: "Expedited Queue",
+        validity: "Treatment Dependent",
+        prereq: "Physician Diagnosis & Funds",
+        target: "USA UK Medical Visa"
+      },
+      {
+        image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=800&q=80",
+        flag: "🌐",
+        country: "Worldwide Medical Support (190+)",
+        stream: "International Cross-Border Healthcare Filings",
+        badge: "Accredited Hospital Network",
+        badgeColor: "bg-purple-50 text-purple-700 border-purple-200",
+        turnaround: "Express Consular Routing",
+        validity: "Patient + Attendants",
+        prereq: "Medical Doctor Referral",
+        target: "Worldwide Medical Tourism"
       }
     ];
 
     function renderCorridors(mode) {
       const container = document.getElementById('corridorCardsGrid');
-      const data = mode === 'tourist' ? touristCorridors : studyCorridors;
+      let data = touristCorridors;
+      if (mode === 'study') data = studyCorridors;
+      if (mode === 'medical') data = medicalCorridors;
       
       container.innerHTML = data.map(item => `
         <div class="bg-white rounded-3xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-card hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group">
@@ -708,15 +860,15 @@
               
               <div class="space-y-2.5 sm:space-y-3 text-xs sm:text-sm pt-4 border-t border-slate-100">
                 <div class="flex justify-between text-slate-600">
-                  <span class="text-slate-400 font-medium">${mode === 'tourist' ? 'Processing Time:' : 'Upcoming Intakes:'}</span>
+                  <span class="text-slate-400 font-medium">${mode === 'medical' ? 'Medical Processing:' : (mode === 'tourist' ? 'Processing Time:' : 'Upcoming Intakes:')}</span>
                   <strong class="text-brand-navy font-bold">${item.turnaround}</strong>
                 </div>
                 <div class="flex justify-between text-slate-600">
-                  <span class="text-slate-400 font-medium">${mode === 'tourist' ? 'Stay Validity:' : 'Post-Study Work:'}</span>
+                  <span class="text-slate-400 font-medium">${mode === 'medical' ? 'Permitted Stay:' : (mode === 'tourist' ? 'Stay Validity:' : 'Post-Study Work:')}</span>
                   <strong class="text-brand-teal font-bold">${item.validity}</strong>
                 </div>
                 <div class="flex justify-between text-slate-600">
-                  <span class="text-slate-400 font-medium">${mode === 'tourist' ? 'Financial Basis:' : 'Funds Benchmark:'}</span>
+                  <span class="text-slate-400 font-medium">${mode === 'medical' ? 'Documentation:' : (mode === 'tourist' ? 'Financial Basis:' : 'Funds Benchmark:')}</span>
                   <strong class="text-slate-700 font-bold">${item.prereq}</strong>
                 </div>
               </div>
@@ -724,7 +876,7 @@
           </div>
 
           <div class="px-5 pb-5 sm:px-6 sm:pb-6">
-            <button onclick="bookSpecificCorridor('${item.target}', '${mode === 'tourist' ? 'Tourist & Holiday Visa' : 'Study Permit & Student Visa'}')" class="w-full py-3 sm:py-3.5 rounded-2xl bg-slate-100 hover:bg-brand-navy text-brand-navy hover:text-white font-display font-bold text-xs sm:text-sm transition shadow-sm flex items-center justify-center gap-2">
+            <button onclick="bookSpecificCorridor('${item.target}', '${mode === 'medical' ? 'Medical Tourism & Treatment' : (mode === 'tourist' ? 'Tourist & Holiday Visa' : 'Study Permit & Student Visa')}')" class="w-full py-3 sm:py-3.5 rounded-2xl bg-slate-100 hover:bg-brand-navy text-brand-navy hover:text-white font-display font-bold text-xs sm:text-sm transition shadow-sm flex items-center justify-center gap-2">
               <span>Apply for ${item.country.split(' ')[0]}</span>
               <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </button>
@@ -738,13 +890,18 @@
     function setCorridorMode(mode) {
       const btnTourist = document.getElementById('btnTouristMode');
       const btnStudy = document.getElementById('btnStudyMode');
+      const btnMedical = document.getElementById('btnMedicalMode');
+
+      btnTourist.className = "px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all text-slate-600 hover:text-brand-navy flex items-center justify-center gap-2";
+      btnStudy.className = "px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all text-slate-600 hover:text-brand-navy flex items-center justify-center gap-2";
+      btnMedical.className = "px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all text-slate-600 hover:text-brand-navy flex items-center justify-center gap-2";
 
       if (mode === 'tourist') {
-        btnTourist.className = "flex-1 sm:flex-initial px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl font-bold text-xs sm:text-sm transition-all bg-brand-navy text-white shadow-md flex items-center justify-center gap-2";
-        btnStudy.className = "flex-1 sm:flex-initial px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl font-bold text-xs sm:text-sm transition-all text-slate-600 hover:text-brand-navy flex items-center justify-center gap-2";
-      } else {
-        btnStudy.className = "flex-1 sm:flex-initial px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl font-bold text-xs sm:text-sm transition-all bg-brand-navy text-white shadow-md flex items-center justify-center gap-2";
-        btnTourist.className = "flex-1 sm:flex-initial px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl font-bold text-xs sm:text-sm transition-all text-slate-600 hover:text-brand-navy flex items-center justify-center gap-2";
+        btnTourist.className = "px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all bg-brand-navy text-white shadow-md flex items-center justify-center gap-2";
+      } else if (mode === 'study') {
+        btnStudy.className = "px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all bg-brand-navy text-white shadow-md flex items-center justify-center gap-2";
+      } else if (mode === 'medical') {
+        btnMedical.className = "px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all bg-brand-navy text-white shadow-md flex items-center justify-center gap-2";
       }
 
       renderCorridors(mode);
@@ -752,15 +909,17 @@
 
     renderCorridors('tourist');
 
-    // Calculator Database
+    // Calculator Database without Embassy Fees
     const calcDatabase = {
-      schengen_tourist: { time: "10 - 15 Days", fee: "€90 (~₹8,200)", funds: "₹4L - ₹6L Balance", dest: "France (Schengen)", type: "Tourist & Holiday Visa", label: "🏖️ Tourist & Holiday Visa" },
-      uk_tourist: { time: "3 - 4 Weeks", fee: "£115 (~₹12,100)", funds: "Employment NOC & Bank Ties", dest: "United Kingdom", type: "Tourist & Holiday Visa", label: "🏖️ Tourist & Holiday Visa" },
-      usa_b1b2: { time: "Consular Slot Queue", fee: "$185 (~₹15,400)", funds: "DS-160 & Home Ties Proof", dest: "United States", type: "Tourist & Holiday Visa", label: "🏖️ Tourist & Holiday Visa" },
-      uae_tourist: { time: "24 - 48 Hours", fee: "₹7,200 All Incl.", funds: "Passport + Photograph Only", dest: "Dubai / UAE", type: "Tourist & Holiday Visa", label: "🏖️ Tourist & Holiday Visa" },
-      canada_study: { time: "30 - 45 Days", fee: "$150 CAD + $85 Bio", funds: "$20,635 CAD GIC + 1st Yr Fee", dest: "Canada", type: "Study Permit & Student Visa", label: "🎓 Student Visa / Study Permit" },
-      uk_student: { time: "3 - 4 Weeks", fee: "£490 (~₹52,000)", funds: "£9,207 to £12,006 Living Exp.", dest: "United Kingdom", type: "Study Permit & Student Visa", label: "🎓 Student Visa / Study Permit" },
-      australia_study: { time: "4 - 6 Weeks", fee: "AUD $1,600", funds: "AUD $29,710 Living Funds", dest: "Australia", type: "Study Permit & Student Visa", label: "🎓 Student Visa / Study Permit" }
+      schengen_tourist: { time: "10 - 15 Days", funds: "₹4L - ₹6L Balance", dest: "France (Schengen Europe)", type: "Tourist & Holiday Visa", label: "🏖️ Tourist & Holiday Visa" },
+      uk_tourist: { time: "3 - 4 Weeks", funds: "Employment NOC & Bank Ties", dest: "United Kingdom (UK)", type: "Tourist & Holiday Visa", label: "🏖️ Tourist & Holiday Visa" },
+      usa_b1b2: { time: "Consular Slot Queue", funds: "DS-160 & Home Ties Proof", dest: "United States (USA)", type: "Tourist & Holiday Visa", label: "🏖️ Tourist & Holiday Visa" },
+      medical_global: { time: "48 - 96 Hours (Express)", funds: "Hospital Estimate & Doctor Letter", dest: "India (Medical / Tourist e-Visa)", type: "Medical Tourism & Treatment", label: "🏥 Medical Tourism & Treatment" },
+      uae_tourist: { time: "24 - 48 Hours", funds: "Passport + Photograph Only", dest: "Dubai / UAE", type: "Tourist & Holiday Visa", label: "🏖️ Tourist & Holiday Visa" },
+      canada_study: { time: "30 - 45 Days", funds: "$20,635 CAD GIC + 1st Yr Fee", dest: "Canada", type: "Study Permit & Student Visa", label: "🎓 Student Visa / Study Permit" },
+      uk_student: { time: "3 - 4 Weeks", funds: "£9,207 to £12,006 Living Exp.", dest: "United Kingdom (UK)", type: "Study Permit & Student Visa", label: "🎓 Student Visa / Study Permit" },
+      australia_study: { time: "4 - 6 Weeks", funds: "AUD $29,710 Living Funds", dest: "Australia", type: "Study Permit & Student Visa", label: "🎓 Student Visa / Study Permit" },
+      other_global: { time: "5 - 15 Days Typical", funds: "Basic Bank Sufficiency", dest: "All Other Global Destinations", type: "Tourist & Holiday Visa", label: "🏖️ Tourist & Holiday Visa" }
     };
 
     function updateCalculator() {
@@ -768,7 +927,6 @@
       const data = calcDatabase[key];
       
       document.getElementById('outTimeline').innerText = data.time;
-      document.getElementById('outGovFee').innerText = data.fee;
       document.getElementById('outFunds').innerText = data.funds;
     }
 
@@ -780,6 +938,7 @@
 
     function bookSpecificCorridor(dest, type, label) {
       document.getElementById('appDest').value = dest;
+      document.getElementById('bookingCountryText').innerText = dest;
       document.getElementById('appType').value = type;
       if (label) document.getElementById('bookingCategoryText').innerText = label;
       document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
@@ -791,12 +950,15 @@
 
       if (cat === 'student') {
         setCorridorMode('study');
+      } else if (cat === 'medical') {
+        setCorridorMode('medical');
       } else {
         setCorridorMode('tourist');
       }
 
       if (query) {
         document.getElementById('appDest').value = document.getElementById('heroSearchInput').value;
+        document.getElementById('bookingCountryText').innerText = document.getElementById('heroSearchInput').value;
       }
       
       document.getElementById('destinations').scrollIntoView({ behavior: 'smooth' });
@@ -813,7 +975,7 @@
 
     // Universal WhatsApp Dispatcher (Auto-routes for Mobile App & Desktop Web)
     function openWhatsApp(customSubject) {
-      const text = encodeURIComponent(`Hello Skygo360, I would like to inquire about visa consultation.\n*Context:* ${customSubject}`);
+      const text = encodeURIComponent(`Hello Skygo360, I would like to inquire about guaranteed visa consultation.\n*Context:* ${customSubject}`);
       const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
       
       if (isMobile) {
@@ -829,7 +991,6 @@
 
       const name = document.getElementById('appFullName').value;
       const phone = document.getElementById('appPhone').value;
-      const email = document.getElementById('appEmail').value;
       const dest = document.getElementById('appDest').value;
       const type = document.getElementById('appType').value;
       const notes = document.getElementById('appNotes').value;
@@ -838,20 +999,18 @@
                          `-------------------------------------\n` +
                          `*Applicant Name:* ${name}\n` +
                          `*Contact Phone:* ${phone}\n` +
-                         `*Email:* ${email || 'Not provided'}\n` +
-                         `*Target Destination:* ${dest}\n` +
+                         `*Destination Country:* ${dest}\n` +
                          `*Visa Stream:* ${type}\n` +
-                         `*Timeline / Intake:* ${notes || 'Immediate review requested'}\n` +
+                         `*Details / Timeline:* ${notes || 'Immediate review requested'}\n` +
+                         `*Service Track:* 100% Guaranteed Filing Assistance\n` +
                          `-------------------------------------`;
 
       const encodedMessage = encodeURIComponent(rawMessage);
       const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
       if (isMobile) {
-        // Direct Native Mobile App Open
         window.location.href = `whatsapp://send?phone=917009667026&text=${encodedMessage}`;
       } else {
-        // Desktop / Laptop Browser Open
         window.open(`https://web.whatsapp.com/send?phone=917009667026&text=${encodedMessage}`, '_blank');
       }
     });
