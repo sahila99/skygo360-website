@@ -132,9 +132,10 @@
           <img src="logo.jpeg" alt="Skygo360 Logo" class="seamless-logo animated-logo h-32 sm:h-40 lg:h-44 w-auto max-w-[400px] sm:max-w-[520px] object-contain cursor-pointer">
         </a>
         
-        <nav class="hidden lg:flex items-center space-x-9 text-base font-bold text-slate-700">
+        <nav class="hidden lg:flex items-center space-x-8 text-base font-bold text-slate-700">
           <a href="#destinations" class="hover:text-brand-teal transition py-1">Visa Portals</a>
           <a href="#services" class="hover:text-brand-teal transition py-1">Concierge & Insurance</a>
+          <a href="#global-presence" class="hover:text-brand-teal transition py-1">Global Presence</a>
           <a href="#calculator" class="hover:text-brand-teal transition py-1">Eligibility Engine</a>
           <a href="#why-skygo" class="hover:text-brand-teal transition py-1">Why Skygo360</a>
           <a href="#faq" class="hover:text-brand-teal transition py-1">FAQ</a>
@@ -172,6 +173,7 @@
     <div id="mobileMenu" class="hidden lg:hidden px-6 pt-4 pb-6 bg-white border-b border-slate-200 space-y-4 font-semibold text-base shadow-xl">
       <a href="#destinations" onclick="closeMobileMenu()" class="block text-slate-700 hover:text-brand-teal">Visa Portals</a>
       <a href="#services" onclick="closeMobileMenu()" class="block text-slate-700 hover:text-brand-teal">Concierge & Insurance</a>
+      <a href="#global-presence" onclick="closeMobileMenu()" class="block text-slate-700 hover:text-brand-teal">Global Presence</a>
       <a href="#calculator" onclick="closeMobileMenu()" class="block text-slate-700 hover:text-brand-teal">Eligibility Engine</a>
       <a href="#why-skygo" onclick="closeMobileMenu()" class="block text-slate-700 hover:text-brand-teal">Why Skygo360</a>
       <a href="#faq" onclick="closeMobileMenu()" class="block text-slate-700 hover:text-brand-teal">FAQ</a>
@@ -337,6 +339,146 @@
             <span>Issue Travel Insurance</span>
             <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Presence Map & Locations Section with World Map Graphic & Pins -->
+  <section id="global-presence" class="py-16 sm:py-24 bg-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
+        <span class="text-sm font-extrabold uppercase tracking-widest text-brand-teal">International Footprint</span>
+        <h2 class="font-display text-2xl sm:text-4xl lg:text-5xl font-extrabold text-brand-navy mt-2">Our Global Presence</h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">Operating across strategic hubs worldwide to provide localized document verification, client consulting, and 24/7 airport support.</p>
+      </div>
+
+      <!-- Interactive Map Board & Nodes Container -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left Column: World Map Illustration with Overlay Pulsing Dots -->
+        <div class="lg:col-span-7 bg-brand-dark rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden border border-slate-800 text-white min-h-[460px] sm:min-h-[520px] flex flex-col justify-between">
+          
+          <!-- Background Grid & World Map SVG Silhouette Overlay -->
+          <div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#00E5BE_1px,transparent_1px)] [background-size:24px_24px]"></div>
+          
+          <div class="absolute inset-0 flex items-center justify-center opacity-25 pointer-events-none p-6">
+            <svg viewBox="0 0 1000 500" class="w-full h-full text-slate-500 fill-current">
+              <!-- Stylized World Map Continents Outline Paths -->
+              <path d="M150,120 Q180,90 220,110 Q250,130 230,170 Q200,200 160,180 Z" opacity="0.6"/>
+              <path d="M280,180 Q350,160 380,240 Q400,320 330,380 Q270,360 290,260 Z" opacity="0.6"/>
+              <path d="M480,90 Q580,80 620,150 Q650,220 560,250 Q480,240 470,160 Z" opacity="0.6"/>
+              <path d="M680,110 Q780,90 850,150 Q900,240 800,280 Q700,270 670,180 Z" opacity="0.6"/>
+              <path d="M780,320 Q860,320 850,380 Q780,420 750,360 Z" opacity="0.6"/>
+            </svg>
+          </div>
+
+          <div class="relative z-10 flex justify-between items-center border-b border-slate-800 pb-4">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-brand-emerald animate-ping"></span>
+              <span class="text-xs font-black tracking-widest uppercase text-brand-accent">Interactive World Map Hubs</span>
+            </div>
+            <span class="text-xs font-bold text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full">5 Global Offices</span>
+          </div>
+
+          <!-- Absolute positioned Map Pins on World Map representation -->
+          <div class="relative z-10 my-auto py-12 h-64 w-full">
+            
+            <!-- 1. Punjab, India Pin (Approx Center-Right) -->
+            <div onclick="focusPresenceHub('Punjab, India', '+91 70096 67026', 'Primary Head Office & Vetting Center')" class="absolute top-[45%] left-[68%] cursor-pointer group -translate-x-1/2 -translate-y-1/2">
+              <div class="relative flex items-center justify-center">
+                <span class="absolute inline-flex h-8 w-8 rounded-full bg-brand-accent opacity-75 animate-ping"></span>
+                <div class="relative flex items-center justify-center w-6 h-6 bg-brand-teal text-white rounded-full shadow-lg border-2 border-white font-bold text-xs">🇮🇳</div>
+              </div>
+              <div class="absolute left-1/2 -translate-x-1/2 top-full mt-1.5 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg border border-slate-700 shadow-xl whitespace-nowrap opacity-90 group-hover:opacity-100 group-hover:scale-110 transition">
+                Punjab, India
+              </div>
+            </div>
+
+            <!-- 2. Melbourne, Australia Pin (Bottom Right) -->
+            <div onclick="focusPresenceHub('Melbourne, Australia', '+61 3 9000 0000', 'Study & Migration Consulting Hub')" class="absolute top-[78%] left-[84%] cursor-pointer group -translate-x-1/2 -translate-y-1/2">
+              <div class="relative flex items-center justify-center">
+                <span class="absolute inline-flex h-8 w-8 rounded-full bg-brand-accent opacity-75 animate-ping"></span>
+                <div class="relative flex items-center justify-center w-6 h-6 bg-brand-teal text-white rounded-full shadow-lg border-2 border-white font-bold text-xs">🇦🇺</div>
+              </div>
+              <div class="absolute left-1/2 -translate-x-1/2 top-full mt-1.5 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg border border-slate-700 shadow-xl whitespace-nowrap opacity-90 group-hover:opacity-100 group-hover:scale-110 transition">
+                Melbourne, Australia
+              </div>
+            </div>
+
+            <!-- 3. Lagos, Nigeria Pin (Center Left / Africa) -->
+            <div onclick="focusPresenceHub('Lagos, Nigeria', '+234 1 000 0000', 'West Africa Admissions & Documentation')" class="absolute top-[58%] left-[48%] cursor-pointer group -translate-x-1/2 -translate-y-1/2">
+              <div class="relative flex items-center justify-center">
+                <span class="absolute inline-flex h-8 w-8 rounded-full bg-brand-accent opacity-75 animate-ping"></span>
+                <div class="relative flex items-center justify-center w-6 h-6 bg-brand-teal text-white rounded-full shadow-lg border-2 border-white font-bold text-xs">🇳🇬</div>
+              </div>
+              <div class="absolute left-1/2 -translate-x-1/2 top-full mt-1.5 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg border border-slate-700 shadow-xl whitespace-nowrap opacity-90 group-hover:opacity-100 group-hover:scale-110 transition">
+                Lagos, Nigeria
+              </div>
+            </div>
+
+            <!-- 4. Salou, Spain Pin (Upper Center / Europe) -->
+            <div onclick="focusPresenceHub('Salou, Spain', '+34 900 000 000', 'Schengen & European Operations')" class="absolute top-[32%] left-[44%] cursor-pointer group -translate-x-1/2 -translate-y-1/2">
+              <div class="relative flex items-center justify-center">
+                <span class="absolute inline-flex h-8 w-8 rounded-full bg-brand-accent opacity-75 animate-ping"></span>
+                <div class="relative flex items-center justify-center w-6 h-6 bg-brand-teal text-white rounded-full shadow-lg border-2 border-white font-bold text-xs">🇪🇸</div>
+              </div>
+              <div class="absolute left-1/2 -translate-x-1/2 top-full mt-1.5 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg border border-slate-700 shadow-xl whitespace-nowrap opacity-90 group-hover:opacity-100 group-hover:scale-110 transition">
+                Salou, Spain
+              </div>
+            </div>
+
+            <!-- 5. Toronto, Canada Pin (Upper Left / North America) -->
+            <div onclick="focusPresenceHub('Toronto, Canada', '+1 416 000 0000', 'North America Student & Work Permit Support')" class="absolute top-[28%] left-[22%] cursor-pointer group -translate-x-1/2 -translate-y-1/2">
+              <div class="relative flex items-center justify-center">
+                <span class="absolute inline-flex h-8 w-8 rounded-full bg-brand-accent opacity-75 animate-ping"></span>
+                <div class="relative flex items-center justify-center w-6 h-6 bg-brand-teal text-white rounded-full shadow-lg border-2 border-white font-bold text-xs">🇨🇦</div>
+              </div>
+              <div class="absolute left-1/2 -translate-x-1/2 top-full mt-1.5 bg-slate-900 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg border border-slate-700 shadow-xl whitespace-nowrap opacity-90 group-hover:opacity-100 group-hover:scale-110 transition">
+                Toronto, Canada
+              </div>
+            </div>
+
+          </div>
+
+          <div class="relative z-10 pt-4 border-t border-slate-800 text-center text-xs text-slate-400">
+            Click any pulsing pin on the world map above to inspect branch details.
+          </div>
+        </div>
+
+        <!-- Right Column: Hub Details Card & Action -->
+        <div class="lg:col-span-5 bg-slate-50 border border-slate-200/90 rounded-3xl p-6 sm:p-8 shadow-card flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-teal-100 text-brand-teal flex items-center justify-center mb-5">
+              <i data-lucide="map-pin" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-teal">Selected Hub Focus</span>
+            <h3 id="activeHubTitle" class="font-display text-2xl font-extrabold text-brand-navy mt-1">Punjab, India</h3>
+            <p id="activeHubRole" class="text-sm font-semibold text-slate-600 mt-1">Primary Head Office & Vetting Center</p>
+            
+            <div class="mt-6 space-y-4 pt-6 border-t border-slate-200">
+              <div class="flex items-center gap-3">
+                <i data-lucide="clock" class="w-5 h-5 text-brand-teal shrink-0"></i>
+                <span class="text-sm font-medium text-slate-700">24/7 Availability Across All Timezones</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="shield-check" class="w-5 h-5 text-brand-emerald shrink-0"></i>
+                <span class="text-sm font-medium text-slate-700">Consulate-Verified Local Legal Documentation</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="phone-call" class="w-5 h-5 text-brand-teal shrink-0"></i>
+                <span id="activeHubPhone" class="text-sm font-bold text-brand-navy">+91 70096 67026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <button onclick="bookHubConnection()" class="w-full py-4 rounded-2xl bg-brand-navy hover:bg-brand-teal text-white font-bold text-sm transition shadow-lg flex items-center justify-center gap-2">
+              <span>Connect with this Office</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          </div>
         </div>
 
       </div>
@@ -1052,6 +1194,18 @@
     populateCountryList();
     updateStreamOptionsForCountry("Australia");
 
+    function focusPresenceHub(title, phone, role) {
+      document.getElementById('activeHubTitle').innerText = title;
+      document.getElementById('activeHubRole').innerText = role;
+      document.getElementById('activeHubPhone').innerText = phone;
+    }
+
+    function bookHubConnection() {
+      const title = document.getElementById('activeHubTitle').innerText;
+      document.getElementById('appNotes').value = `Connecting via Global Presence Hub: ${title}`;
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
+
     let chatPermanentlyClosed = false;
 
     setTimeout(() => {
@@ -1614,7 +1768,6 @@
       const icon = document.getElementById(`faqIcon-${id}`);
       const isHidden = content.classList.contains('hidden');
       
-      // Close all other FAQs
       for (let i = 1; i <= 3; i++) {
         document.getElementById(`faqContent-${i}`).classList.add('hidden');
         document.getElementById(`faqIcon-${i}`).style.transform = 'rotate(0deg)';
