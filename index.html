@@ -565,7 +565,7 @@
           <p class="text-slate-400 text-xs sm:text-base mt-2">Submit your details to connect directly with our priority WhatsApp desks (+91 70096 67026 or +91 88473 18694).</p>
         </div>
 
-        <form id="directApplyForm" class="space-y-4 sm:space-y-5">
+        <form id="directApplyForm" onsubmit="submitDirectApplication(event)" class="space-y-4 sm:space-y-5">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
             <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-3.5 sm:p-4">
               <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1.5">Applicant Full Name</label>
@@ -1149,6 +1149,30 @@
       document.getElementById('bookingDeskIcon').style.transform = 'rotate(0deg)';
     }
 
+    function openWhatsApp(contextSource) {
+      const name = document.getElementById('appFullName')?.value || 'Valued Client';
+      const phone = document.getElementById('appPhone')?.value || '';
+      const dest = document.getElementById('appDest')?.value || 'Global';
+      const type = document.getElementById('appType')?.value || 'Visa & Concierge';
+      const notes = document.getElementById('appNotes')?.value || contextSource;
+
+      const deskNumber = document.getElementById('appTargetDesk')?.value || '917009667026';
+      
+      const text = `Hello Skygo360 Desk,%0A%0AI would like to start an application:%0A• Name: ${encodeURIComponent(name)}%0A• Phone: ${encodeURIComponent(phone)}%0A• Destination: ${encodeURIComponent(dest)}%0A• Service: ${encodeURIComponent(type)}%0A• Notes: ${encodeURIComponent(notes)}`;
+      
+      window.open(`https://wa.me/${deskNumber}?text=${text}`, '_blank');
+    }
+
+    function openWhatsAppDesk(deskNum, contextSource) {
+      const text = `Hello Skygo360 Desk,%0A%0AI am inquiring from the website via ${encodeURIComponent(contextSource)}. Please assist me with my visa and documentation requirements.`;
+      window.open(`https://wa.me/${deskNum}?text=${text}`, '_blank');
+    }
+
+    function submitDirectApplication(event) {
+      event.preventDefault();
+      openWhatsApp('Direct Application Form');
+    }
+
     const touristCorridors = [
       {
         image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
@@ -1584,7 +1608,23 @@
       if (label) document.getElementById('bookingCategoryText').innerText = label;
       document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
     }
-    
+
+    function toggleFaq(id) {
+      const content = document.getElementById(`faqContent-${id}`);
+      const icon = document.getElementById(`faqIcon-${id}`);
+      const isHidden = content.classList.contains('hidden');
+      
+      // Close all other FAQs
+      for (let i = 1; i <= 3; i++) {
+        document.getElementById(`faqContent-${i}`).classList.add('hidden');
+        document.getElementById(`faqIcon-${i}`).style.transform = 'rotate(0deg)';
+      }
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
   </script>
 </body>
 </html>
